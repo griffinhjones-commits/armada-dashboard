@@ -1,0 +1,71 @@
+<!doctype html><html><head><meta charset="utf-8">
+<title>Armada · ccusage</title>
+<meta http-equiv="refresh" content="300">
+<style>
+:root{--bg:#0a0c10;--panel:#12161f;--line:#222938;--fg:#d7dee9;--dim:#7f8899;--acc:#7aa2f7;--ok:#7ee787;--warn:#e3b341}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(1200px 600px at 20% -10%,#16203a 0%,var(--bg) 60%);color:var(--fg);
+ font:14px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;padding:28px}
+.wrap{max-width:1180px;margin:0 auto}
+h1{font-size:23px;font-weight:650;margin:0;letter-spacing:-.01em}
+h2{font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--dim);margin:0 0 12px;font-weight:600}
+.sub{color:var(--dim);font-size:12.5px;margin:5px 0 22px}
+.banner{background:linear-gradient(90deg,#2a1f14,#1d1710);border:1px solid #6b4a1e;border-radius:12px;
+ padding:13px 17px;margin-bottom:20px;color:#e8c07d;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.banner b{color:#f0d9a8}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(178px,1fr));gap:12px;margin-bottom:22px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:15px 17px}
+.card .lbl{color:var(--dim);font-size:10.5px;text-transform:uppercase;letter-spacing:.08em}
+.card .val{font-size:25px;font-weight:640;margin:6px 0 2px;letter-spacing:-.02em}
+.card .sm{color:var(--dim);font-size:11.5px}
+.panels{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}
+@media(max-width:900px){.panels{grid-template-columns:1fr}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:16px 18px;overflow:hidden}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th{text-align:left;color:var(--dim);font-weight:600;padding:6px 8px;border-bottom:1px solid var(--line);font-size:10.5px;text-transform:uppercase;letter-spacing:.06em}
+td{padding:5px 8px;border-bottom:1px solid #171c26}
+td.n{text-align:right;font-variant-numeric:tabular-nums;color:#b6c0d0}
+tr.hot td{color:var(--ok)}
+.chart{width:100%;height:auto;display:block}
+.ax{fill:#6d7686;font-size:9px}
+.lbl{fill:#98a2b2;font-size:11px}
+.val{fill:#7f8899;font-size:10.5px}
+.muted{color:var(--dim);font-size:12.5px}
+.bar{height:7px;background:#1c2331;border-radius:4px;overflow:hidden;margin:9px 0 7px}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,#7aa2f7,#7ee787)}
+footer{color:var(--dim);font-size:11px;margin-top:22px;text-align:center}
+.live{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ok);margin-right:6px;
+ animation:p 2s infinite}
+@keyframes p{0%,100%{opacity:1}50%{opacity:.25}}
+</style></head><body><div class=wrap>
+<h1>Armada · cost dashboard</h1>
+<div class=sub>Claude Code · Codex · Antigravity · Hermes Agent — read from local usage files, nothing uploaded
+ · <span class=live></span>auto-refresh 5 min · generated 2026-10-03T02:51:20</div>
+
+<div class=banner>
+ <div><b>⏸ Crew OFF until Monday 12:00.</b></div>
+ <div>claude-opus-5-5 is 79.7% of all spend. The free fleet (R1–R7) costs $0.00 all-time.</div>
+</div>
+
+<div class=grid>
+ <div class=card><div class=lbl>Total tokens</div><div class=val>24.49 B</div><div class=sm>11 days tracked</div></div>
+ <div class=card><div class=lbl>Total cost</div><div class=val>$7,340</div><div class=sm>list-price estimate</div></div>
+ <div class=card><div class=lbl>claude-opus-5-5</div><div class=val>80%</div><div class=sm>$5,847 · 19.3 B tok</div></div>
+ <div class=card><div class=lbl>Hermes fleet</div><div class=val>$0.00</div><div class=sm>0.0 M tokens, all 7 models</div></div>
+ <div class=card><div class=lbl>5-hour block</div><div class=val" style="font-size:15px">ACTIVE — burning now</div><div class=bar><i style="width:0.0%"></i></div><div class=sm>410,168 of 2,184,393,831 tokens (0.02%)</div></div>
+</div>
+
+<div class=panels>
+ <div class=panel><h2>Daily cost</h2><svg viewBox="0 0 760 234" class="chart" role="img"><rect x="6.0" y="174.9" width="62.5" height="5.1" rx="2" fill="#7aa2f7"><title>2026-09-23: 74</title></rect><text x="37.3" y="194" class="ax" text-anchor="middle">09-23</text><rect x="74.5" y="174.2" width="62.5" height="5.8" rx="2" fill="#7aa2f7"><title>2026-09-24: 85</title></rect><text x="105.8" y="194" class="ax" text-anchor="middle">09-24</text><rect x="143.1" y="170.8" width="62.5" height="9.2" rx="2" fill="#7aa2f7"><title>2026-09-25: 134</title></rect><text x="174.4" y="194" class="ax" text-anchor="middle">09-25</text><rect x="211.6" y="107.6" width="62.5" height="72.4" rx="2" fill="#7aa2f7"><title>2026-09-26: 1,061</title></rect><text x="242.9" y="194" class="ax" text-anchor="middle">09-26</text><rect x="280.2" y="6.0" width="62.5" height="174.0" rx="2" fill="#7aa2f7"><title>2026-09-27: 2,551</title></rect><text x="311.5" y="194" class="ax" text-anchor="middle">09-27</text><rect x="348.7" y="106.8" width="62.5" height="73.2" rx="2" fill="#7aa2f7"><title>2026-09-28: 1,072</title></rect><text x="380.0" y="194" class="ax" text-anchor="middle">09-28</text><rect x="417.3" y="122.3" width="62.5" height="57.7" rx="2" fill="#7aa2f7"><title>2026-09-29: 846</title></rect><text x="448.5" y="194" class="ax" text-anchor="middle">09-29</text><rect x="485.8" y="105.9" width="62.5" height="74.1" rx="2" fill="#7aa2f7"><title>2026-09-30: 1,086</title></rect><text x="517.1" y="194" class="ax" text-anchor="middle">09-30</text><rect x="554.4" y="157.0" width="62.5" height="23.0" rx="2" fill="#7aa2f7"><title>2026-10-01: 337</title></rect><text x="585.6" y="194" class="ax" text-anchor="middle">10-01</text><rect x="622.9" y="173.7" width="62.5" height="6.3" rx="2" fill="#7aa2f7"><title>2026-10-02: 92</title></rect><text x="654.2" y="194" class="ax" text-anchor="middle">10-02</text><rect x="691.5" y="178.0" width="62.5" height="2.0" rx="2" fill="#7aa2f7"><title>2026-10-03: 1</title></rect><text x="722.7" y="194" class="ax" text-anchor="middle">10-03</text></svg></div>
+ <div class=panel><h2>Cost by model</h2><svg viewBox="0 0 760 234" class="chart"><text x="0" y="19" class="lbl">claude-opus-5-5</text><rect x="230" y="8" width="460.0" height="16" rx="3" fill="#7aa2f7" opacity="0.85"/><text x="700.0" y="21" class="val">$5,847</text><text x="0" y="45" class="lbl">claude-sonnet-5</text><rect x="230" y="34" width="47.1" height="16" rx="3" fill="#7aa2f7" opacity="0.85"/><text x="287.1" y="47" class="val">$599</text><text x="0" y="71" class="lbl">claude-sonnet-5-5</text><rect x="230" y="60" width="40.2" height="16" rx="3" fill="#7aa2f7" opacity="0.85"/><text x="280.2" y="73" class="val">$511</text><text x="0" y="97" class="lbl">claude-fable-5-1</text><rect x="230" y="86" width="29.7" height="16" rx="3" fill="#7aa2f7" opacity="0.85"/><text x="269.7" y="99" class="val">$378</text><text x="0" y="123" class="lbl">gemini-3.8-flash-high</text><rect x="230" y="112" width="2.0" height="16" rx="3" fill="#7aa2f7" opacity="0.85"/><text x="242.0" y="125" class="val">$3</text><text x="0" y="149" class="lbl">claude-opus-4-6</text><rect x="230" y="138" width="2.0" height="16" rx="3" fill="#7aa2f7" opacity="0.85"/><text x="242.0" y="151" class="val">$2</text><text x="0" y="175" class="lbl">stealth/space-bunny-alpha</text><rect x="230" y="164" width="2.0" height="16" rx="3" fill="#7aa2f7" opacity="0.85"/><text x="242.0" y="177" class="val">$1</text><text x="0" y="201" class="lbl">claude-haiku-4-5-20251001</text><rect x="230" y="190" width="2.0" height="16" rx="3" fill="#7aa2f7" opacity="0.85"/><text x="242.0" y="203" class="val">$0</text><text x="0" y="227" class="lbl">gpt-5</text><rect x="230" y="216" width="2.0" height="16" rx="3" fill="#7aa2f7" opacity="0.85"/><text x="242.0" y="229" class="val">$0</text></svg></div>
+</div>
+
+<div class=panels>
+ <div class=panel><h2>Tokens per 5-hour block</h2><svg viewBox="0 0 760 170" class="chart"><polygon points="6,146 6.0,23.4 63.5,22.0 121.1,64.2 178.6,53.9 236.2,85.1 293.7,130.3 351.2,144.6 408.8,144.9 466.3,75.7 523.8,120.6 581.4,117.0 638.9,143.1 696.5,145.1 754.0,146.0 754,146" fill="#7aa2f7" opacity="0.14"/><polyline points="6.0,23.4 63.5,22.0 121.1,64.2 178.6,53.9 236.2,85.1 293.7,130.3 351.2,144.6 408.8,144.9 466.3,75.7 523.8,120.6 581.4,117.0 638.9,143.1 696.5,145.1 754.0,146.0" fill="none" stroke="#7aa2f7" stroke-width="2"/><circle cx="6.0" cy="23.4" r="3" fill="#7aa2f7"><title>2026-09-30 01:00: 1,143,087,448</title></circle><circle cx="63.5" cy="22.0" r="3" fill="#7aa2f7"><title>2026-09-30 06:00: 1,156,112,615</title></circle><circle cx="121.1" cy="64.2" r="3" fill="#7aa2f7"><title>2026-09-30 11:00: 762,255,633</title></circle><circle cx="178.6" cy="53.9" r="3" fill="#7aa2f7"><title>2026-09-30 16:00: 859,036,923</title></circle><circle cx="236.2" cy="85.1" r="3" fill="#7aa2f7"><title>2026-09-30 21:00: 567,589,005</title></circle><circle cx="293.7" cy="130.3" r="3" fill="#7aa2f7"><title>2026-10-01 02:00: 145,936,188</title></circle><circle cx="351.2" cy="144.6" r="3" fill="#7aa2f7"><title>2026-10-01 07:00: 12,878,184</title></circle><circle cx="408.8" cy="144.9" r="3" fill="#7aa2f7"><title>2026-10-01 12:00: 10,347,353</title></circle><circle cx="466.3" cy="75.7" r="3" fill="#7aa2f7"><title>2026-10-01 17:00: 655,168,650</title></circle><circle cx="523.8" cy="120.6" r="3" fill="#7aa2f7"><title>2026-10-01 22:00: 237,120,494</title></circle><circle cx="581.4" cy="117.0" r="3" fill="#7aa2f7"><title>2026-10-02 03:00: 270,297,241</title></circle><circle cx="638.9" cy="143.1" r="3" fill="#7aa2f7"><title>2026-10-02 14:00: 26,756,818</title></circle><circle cx="696.5" cy="145.1" r="3" fill="#7aa2f7"><title>2026-10-02 21:00: 8,222,284</title></circle><circle cx="754.0" cy="146.0" r="3" fill="#7aa2f7"><title>2026-10-03 04:00: 410,168</title></circle></svg></div>
+ <div class=panel><h2>Recent blocks</h2><table><tr><th>Start</th><th>Tokens</th><th>Cost</th><th></th></tr><tr class='hot'><td>2026-10-03 04:00</td><td class=n>410,168</td><td class=n>$0.59</td><td>ACTIVE</td></tr><tr class=''><td>2026-10-02 21:00</td><td class=n>8,222,284</td><td class=n>$10.06</td><td></td></tr><tr class=''><td>2026-10-02 14:00</td><td class=n>26,756,818</td><td class=n>$23.35</td><td></td></tr><tr class=''><td>2026-10-02 03:00</td><td class=n>270,297,241</td><td class=n>$68.33</td><td></td></tr><tr class=''><td>2026-10-01 22:00</td><td class=n>237,120,494</td><td class=n>$61.04</td><td></td></tr><tr class=''><td>2026-10-01 17:00</td><td class=n>655,168,650</td><td class=n>$257.05</td><td></td></tr><tr class=''><td>2026-10-01 12:00</td><td class=n>10,347,353</td><td class=n>$2.19</td><td></td></tr><tr class=''><td>2026-10-01 07:00</td><td class=n>12,878,184</td><td class=n>$2.72</td><td></td></tr><tr class=''><td>2026-10-01 02:00</td><td class=n>145,936,188</td><td class=n>$52.85</td><td></td></tr><tr class=''><td>2026-09-30 21:00</td><td class=n>567,589,005</td><td class=n>$143.83</td><td></td></tr><tr class=''><td>2026-09-30 16:00</td><td class=n>859,036,923</td><td class=n>$244.83</td><td></td></tr><tr class=''><td>2026-09-30 11:00</td><td class=n>762,255,633</td><td class=n>$207.56</td><td></td></tr><tr class=''><td>2026-09-30 06:00</td><td class=n>1,156,112,615</td><td class=n>$315.31</td><td></td></tr><tr class=''><td>2026-09-30 01:00</td><td class=n>1,143,087,448</td><td class=n>$313.87</td><td></td></tr></table></div>
+</div>
+
+<div class=panel"><h2>Daily totals</h2><table><tr><th>Date</th><th>Tokens</th><th>Cost</th></tr><tr><td>2026-10-03</td><td class=n>3,554,025</td><td class=n>$1</td></tr><tr><td>2026-10-02</td><td class=n>383,113,022</td><td class=n>$92</td></tr><tr><td>2026-10-01</td><td class=n>971,917,253</td><td class=n>$337</td></tr><tr><td>2026-09-30</td><td class=n>3,946,716,544</td><td class=n>$1,086</td></tr><tr><td>2026-09-29</td><td class=n>2,851,497,471</td><td class=n>$846</td></tr><tr><td>2026-09-28</td><td class=n>3,968,585,173</td><td class=n>$1,072</td></tr><tr><td>2026-09-27</td><td class=n>8,021,503,389</td><td class=n>$2,551</td></tr><tr><td>2026-09-26</td><td class=n>3,487,480,587</td><td class=n>$1,061</td></tr><tr><td>2026-09-25</td><td class=n>409,437,646</td><td class=n>$134</td></tr><tr><td>2026-09-24</td><td class=n>243,653,468</td><td class=n>$85</td></tr><tr><td>2026-09-23</td><td class=n>201,555,082</td><td class=n>$74</td></tr></table></div>
+
+<footer>generated by <code>tools/ccusage_dashboard.py</code> · source <code>ccusage *.json</code> · rebuild any time</footer>
+</div></body></html>
